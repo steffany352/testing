@@ -12,7 +12,7 @@ family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@30
 <body>
 <!-- TOP BAR-->
 <div class="top-bar">
-<span><a href="tel:+2347044444477">+234 704 444 4477</a></span>
+<span><a href="mailto:transformativemindsng@gmail.com">transformativemindsng@gmail.com</a></span>
 <span class="verse-tag">"Bear one another's burdens, and so fulfill the law of Christ." —
 Galatians 6:2</span>
 <span>Mon– Fri: 9:00 am– 5:00 pm;Sat: 9:00 am– 1:00 pm</span>
@@ -488,7 +488,7 @@ both evidence-based and culturally sensitive.</div>
 <div class="inner">
 <div class="contact-info">
 <p class="eyebrow">Contact Us</p>
-<h3>WeHopeto SeeYou Soon</h3>
+<h3>We Hope to See You Soon</h3>
 <div class="info-block">
 <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5
 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38
@@ -501,8 +501,8 @@ div></div>
 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1
 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2
 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
-<div class="info-text"><div class="label">Phone</div><div class="value"><a
-href="tel:+2347044444477">+234 704 444 4477</a></div></div>
+<div class="info-text"><div class="label">Email</div><div class="value"><a
+href="mailto:transformativemindsng@gmail.com">transformativemindsng<br>@gmail.com</a></div></div>
 </div>
 <h4 style="margin: 24px 0 12px; font-size: 0.85rem; font-weight: 700; letter-spacing:
 0.1em; text-transform: uppercase; color: var(--teal);">Office Hours</h4>
@@ -528,19 +528,27 @@ class="time">Closed</span></div>
 <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; color:var(--text-dark);
 margin-bottom:24px;">Book a Free Consultation</h3>
 <form action="https://formspree.io/f/mykapbev" method="POST">
+  <input type="hidden"
+  name="_next"
+  value="https://steffany352.github.io/testing/thankyou.html">
 <div class="form-row">
-<div class="form-group"><label>First Name *</label><input type="text"
-name="first_name" 
+<div class="form-group">
+  <label>First Name *</label>
+  <input type="text"
+  name="first_name"
 placeholder="Your first name" required/></div>
-<div class="form-group"><label>Last Name *</label><input type="text"
-name="last_name" 
+<div class="form-group"><label>Last Name *</label>
+  <input type="text"
+  name="last_name"
 placeholder="Your last name" required/></div>
 </div>
-<div class="form-group"><label>Email Address *</label><input type="email"
-name="email" 
+<div class="form-group"><label>Email Address *</label>
+  <input type="email"
+  name="email"
 placeholder="your@email.com" required/></div>
-<div class="form-group"><label>Phone Number</label><input type="tel"
-name="phone" 
+<div class="form-group"><label>Phone Number</label>
+  <input type="tel"
+  name="phone"
 placeholder="+234 __ ___ ____" required/></div>
 <div class="form-group">
 <label>Service of Interest</label>
@@ -556,7 +564,7 @@ placeholder="+234 __ ___ ____" required/></div>
 <option>Other</option>
 </select>
 </div>
-<div class="form-group"><label>Message</label><textarea name="message" placeholder="How can
+<div class="form-group"><label>Message</label><textarea name="meassage" placeholder="How can
 we help you? Please share a little about what you're looking for..." required></textarea></div>
 <p class="disclaimer">Please do not include any sensitive health information in this
 form.</p>
@@ -651,5 +659,18 @@ answer.classList.add('open');
 }
 }
 </script>
+
+<script>
+const form = document.querySelector(".contact-form");
+
+if (form) {
+    form.addEventListener("submit", function() {
+        setTimeout(() => {
+            window.location.href = "thankyou.html";
+        }, 1000);
+    });
+}
+</script>
+
 </body>
 </html>
